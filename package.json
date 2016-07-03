@@ -1,6 +1,7 @@
 {
     "name": "Avances",
     "main": "server.js",
+    "scripts":{
     "start": "node ./bin/www"
   },
   "engines": {
