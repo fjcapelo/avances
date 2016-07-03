@@ -1,0 +1,170 @@
+<!-- addForm.html -->
+
+<!-- "Join Team" (Post) Form -->
+<script language = "JavaScript">
+var el = "el";
+var la = "la";
+if (formData.don = "Don"){
+  formData.el = "el";
+} else { formaData.el = "la";
+}
+</script>
+
+
+
+<div class="col-xs-12">
+
+    <!-- Creates Main Panel -->
+    <div class="panel panel-default">
+
+        <!-- Panel Title -->
+        <div class="panel-heading">
+            <h2 class="panel-title text-center">Avances <span class="glyphicon glyphicon-map-marker"></span></h2>
+        </div>
+
+        <!-- Panel Body -->
+        <div class="panel-body">
+
+            <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
+            <form name ="addForm" novalidate>
+                <!-- Text Boxes and Other User Inputs. Note ng-model binds the values to Angular $scope -->
+                <div class="form-group">
+                    <label for="danos">DAÑOS</label>
+                    <input autocomplete="off" type="text" class="form-control"  id="daños"  ng-model="formData.danos" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="causa">CAUSA</label>
+                    <input autocomplete="off" type="text" class="form-control"  id="causa"  ng-model="formData.causa" required>
+
+              </div>
+
+              <div class="form-group">
+                  <label for="origen">ORIGEN</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="origen"  ng-model="formData.origen" required>
+
+              </div>
+
+              <div class="row">
+
+              <div class="col-xs-3">
+                <label for="vivienda">TIPO DE RIESGO</label>
+              <select name="vivienda" ng-model="formData.vivienda" id="vivienda" type = "text">
+                <option value="piso">Piso</option>
+                <option value="adosada">Adosada</option>
+                <option value="chalet">Chalet</option>
+                <option value="local comercial">Local comercial</option>
+                <option value="nave industrial">Nave industrial</option>
+              </select>
+            </div>
+
+            <div class="col-xs-3">
+                <label for="zona">ZONA</label>
+              <select name="zona" ng-model="formData.zona" id="zona" type = "text">
+                <option value="urbana">Urbana</option>
+                <option value="rural">Rural</option>
+                <option value="extra-radio">Extra-radio</option>
+                <option value="nucleo industrial">Nucleo industrial</option>
+              </select>
+              </div>
+                  <div class="col-xs-3">
+                      <label for="don">D/DÑA</label>
+              <select name="don" ng-model="formData.don" id="don" type = "text">
+                <option value="Don">Don</option>
+                <option value="Doña">Doña</option>
+
+              </select>
+
+            </div>
+
+
+              <div class="col-xs-3">
+                  <label for="nombre">NOMBRE</label>
+                  <input autocomplete="off" type="text"  id="origen"  ng-model="formData.nombre" required>
+
+              </div>
+
+</div>
+              </div>
+
+              <div class="form-group">
+                  <label for="circunstancias">CIRCUNSTANCIAS</label>
+                  
+                  <label >Comenta que en fecha de siniestro, estando presente en el riesgo (o no) hubo (un corte de suministro, incencio...)</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="circunstancias2"  ng-model="formData.circunstancias2" required>
+                  <label >Que provocó daños a</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="circunstancias3"  ng-model="formData.circunstancias3" required>
+                  <label >Avisó  a un servicio técnico ( o no)</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="circunstancias4"  ng-model="formData.circunstancias4" required>
+                  <label >Presenta copia de los siguientes documentos</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="circunstancias5"  ng-model="formData.circunstancias5" required>
+
+              </div>
+
+              <div class="row">
+
+
+            <div class="col-xs-3">
+                <label for="zona">COBERTURA</label>
+              <select name="cobertura" ng-model="formData.cobertura" id="cobertura" type = "text">
+                <option value="CON COBERTURA">CON COBERTURA</option>
+                <option value="SIN COBERTURA">SIN COBERTURA</option>
+
+              </select>
+              </div>
+                  <div class="col-xs-3">
+                      <label for="garantia">GARANTIA</label>
+              <select name="garantia" ng-model="formData.garantia" id="garantia" type = "text">
+                <option value="FENOMENOS ELECTRICOS">Fenómenos eléctricos</option>
+                <option value="DAÑOS ELECTRICOS">Daños electricos</option>
+                <option value="AVERIA DE MAQUINARIA">Avería de maquinaria</option>
+                <option value="INCENDIO">Incendio</option>
+
+              </select>
+
+            </div>
+
+            <div class="col-xs-3">
+              <label for="riesgo">CONTINENTE/CONTENIDO</label>
+            <select name="riesgo" ng-model="formData.riesgo" id="riesgo" type = "text">
+              <option value="continente">Continente</option>
+              <option value="contenido">Contenido</option>
+              <option value="mobiliario">Mobiliario</option>
+              <option value="Edificación">Edificación</option>
+
+            </select>
+          </div>
+
+
+
+
+            </div>
+
+
+
+              <div class="form-group">
+                  <label for="calificacion">CALIFICACION</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="calificacion"  ng-model="formData.calificacion" required>
+
+              </div>
+              <div class="form-group">
+                  <label for="tasacion">TASACION PERICIAL DE DAÑOS</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="tasacion"  ng-model="formData.tasacion" required>
+
+              </div>
+
+              <div class="form-group">
+                  <label for="subtotal">SUBTOTAL DE DAÑOS</label>
+                  <input autocomplete="off" type="text" class="form-control"  id="subotal"  ng-model="formData.subtota" required>
+
+              </div>
+
+
+
+
+                <!-- Submit button. Note that its tied to createUser() function from addCtrl. Also note ng-disabled logic which prevents early submits.  -->
+                    <button type="submit" class="btn btn-danger btn-block" ng-click= "createUser()" ng-disabled="addForm.$invalid" >Consultar</button>
+            </form>
+        </div>
+    </div>
+</div>
