@@ -1,6 +1,14 @@
 {
-    "name": "MeanMapsApp",
+    "name": "Avances",
     "main": "server.js",
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "6.2.2",
+    "npm": "3..5"
+  },
+
+
     "dependencies" : {
         "express"    : "~4.7.2",
         "morgan"     : "~1.2.2",
